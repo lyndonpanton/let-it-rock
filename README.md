@@ -59,8 +59,8 @@ n/a
 ### Executing program
 
 1. Go to the root directory
-2. Follow the following path: AsteroidsII -> Build -> Windows -> x86
-3. Run the **AsteroidsII** application
+2. Follow the following path: Asteroids -> Build -> Windows -> x86
+3. Run the **Asteroids** application
 
 ## Help
 
