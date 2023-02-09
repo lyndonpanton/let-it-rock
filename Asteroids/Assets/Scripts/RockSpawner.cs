@@ -41,7 +41,6 @@ public class RockSpawner : MonoBehaviour
 
     void SpawnRock()
     {
-
         Vector3 spawnLocation = new Vector3(
             Random.Range(minSpawnY, maxSpawnX),
             Random.Range(minSpawnY, maxSpawnY),
@@ -62,6 +61,32 @@ public class RockSpawner : MonoBehaviour
 
         Sprite randomRockSprite = sprites[Random.Range(0, sprites.Length)];
         spriteRenderer.sprite = randomRockSprite;
+
+        Rigidbody2D rockRb2d = rock.GetComponent<Rigidbody2D>();
+
+        float horizontalForce = Random.Range(3.0f, 6.0f);
+        float verticalForce = Random.Range(3.0f, 6.0f);
+
+        int randomHorizontalInverse = Random.Range(0, 2);
+        int randomVerticalInverse = Random.Range(0, 2);
+
+        if (randomHorizontalInverse == 1)
+        {
+            horizontalForce *= -1;
+        }
+
+        if (randomVerticalInverse == 1)
+        {
+            verticalForce *= -1;
+        }
+
+        rockRb2d.AddForce(
+            new Vector2(
+                horizontalForce,
+                verticalForce
+            ),
+            ForceMode2D.Impulse
+        );
 
 
     }

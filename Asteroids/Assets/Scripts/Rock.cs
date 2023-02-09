@@ -4,15 +4,11 @@ using UnityEngine;
 
 public class Rock : MonoBehaviour
 {
-    SpriteRenderer spriteRenderer;
-
-    Sprite[] sprites;
+    Rigidbody2D rb2d;
     // Start is called before the first frame update
     void Start()
     {
-        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
 
-        
     }
 
     // Update is called once per frame
