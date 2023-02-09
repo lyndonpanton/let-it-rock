@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 42371087}
   - component: {fileID: 42371086}
   - component: {fileID: 42371091}
+  - component: {fileID: 42371092}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -229,6 +230,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76a99a85f8ac9c14fa06e1fc7110b328, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &42371092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42371085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c9b5ca919c74214eaba0e828224eca9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabRock: {fileID: 2636161014431320242, guid: 32b6714b8dca4f64f951a2d830724e26, type: 3}
+  greenRockSprite: {fileID: 21300000, guid: b4683b6ba5dfd7b40a6cf93a353b25d5, type: 3}
+  magentaRockSprite: {fileID: 21300000, guid: 46f25c51b6a828b4b96636935c40b746, type: 3}
+  redRockSprite: {fileID: 21300000, guid: dd89821250d5c6c4dbcfbeea01d1b025, type: 3}
 --- !u!1 &1879896511
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,7 +315,7 @@ SpriteRenderer:
   m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1879896513
