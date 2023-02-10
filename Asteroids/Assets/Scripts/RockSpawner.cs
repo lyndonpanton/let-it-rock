@@ -88,6 +88,5 @@ public class RockSpawner : MonoBehaviour
             ForceMode2D.Impulse
         );
 
-
     }
 }
